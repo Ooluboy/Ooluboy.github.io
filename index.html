@@ -187,6 +187,7 @@ h1 { margin-top: .16em; font: 500 clamp(6rem, 16vw, 15rem)/.79 var(--serif); let
 .hero-copy .subtitle { font-size: clamp(1.9rem, 3vw, 2.65rem); }
 .subtitle { font: clamp(2.1rem, 3.5vw, 3.4rem)/.98 var(--serif); margin-bottom: .85rem; }
 .hero-copy > p + p { color: var(--muted); }
+.button, .nav-location, .photo-toggle { border-radius: .75rem; }
 .button { display: inline-flex; align-items: center; justify-content: center; margin-top: 1.35rem; min-height: 45px; background: var(--charcoal); color: white; border: 1px solid var(--charcoal); padding: .58rem 1.15rem; font-size: .9rem; font-weight: 700; text-decoration: none; }
 .button:hover { background: var(--gold); border-color: var(--gold); color: white; }
 .hero-image img { display: block; width: 100%; height: auto; aspect-ratio: 2.1; object-fit: cover; object-position: center 16%;
@@ -232,8 +233,8 @@ h3 { font: 2.1rem/1.02 var(--serif); }
 .rental-inner { padding-block: clamp(62px, 9vw, 120px); }
 .rental .eyebrow, .rental h2 em { color: #d9bd8d; }
 .rental-lead { max-width: 35rem; margin-top: 1.45rem; }
-.uses { display: grid; grid-template-columns: repeat(3,1fr); margin-top: 2.8rem; border-block: 1px solid #838675; }
-.uses article { padding: 1.5rem; }
+.uses { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); margin-top: 2.8rem; border-block: 1px solid #838675; }
+.uses article { padding: 1.5rem clamp(.75rem, 1.8vw, 1.5rem); }
 .uses article:first-child { padding-left: 0; }
 .uses article + article { border-left: 1px solid #838675; }
 .uses p { margin-top: .5rem; color: #e4e3d6; }
@@ -314,10 +315,11 @@ address { font-style: normal; }
       <p class="rental-lead">Möisas saab üürida erinevaid ruume. Vana vallamaja on varem pakkunud pinda nii kontorile, kohalikele teenustele kui ka näitustele.</p>
       <div class="uses" aria-label="Ruumide kasutusideed">
         <article><h3>Tööks</h3><p>Oma kontor või tööruum Salmel.</p></article>
-        <article><h3>Teenuse pakkumiseks</h3><p>Ruum, kus oma kliente vastu võtta.</p></article>
+        <article><h3>Teenuse pakkumiseks</h3><p>Ruum, kus oma kliente vastu võtta, sealhulgas massaaži tuba.</p></article>
         <article><h3>Näituseks</h3><p>Paik, kus tuua oma looming külastajateni.</p></article>
+        <article><h3>Kohviku pidamiseks</h3><p>Köök, baaridaami tuba koos letiga ja kohvikuruumid eraldi sissepääsuga.</p></article>
       </div>
-      <p class="rental-note">Vabade ruumide info, hinnad ja üürikontakt lisanduvad.</p>
+      <p class="rental-note">Vabade ruumide info ja hinnad maja perenaiselt - Ilona +372 50 63 7907</p>
     </div>
   </section>
   <section id="asukoht" class="location wrap" aria-labelledby="asukoha-pealkiri">
@@ -337,5 +339,5 @@ photoToggle.addEventListener("click", () => {
   heroPhoto.dataset.color = String(color);
 });
 </script>
-</body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5e0fe69acda5439',t:'MTc5NTI3NzczMw=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5e0fe69acda5439',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
